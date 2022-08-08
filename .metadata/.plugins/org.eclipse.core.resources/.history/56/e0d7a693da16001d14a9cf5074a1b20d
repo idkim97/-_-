@@ -1,0 +1,6 @@
+package calculate_VerIs;
+
+public class IsCal {
+	public String StringBuffer="";
+	public double result;
+}

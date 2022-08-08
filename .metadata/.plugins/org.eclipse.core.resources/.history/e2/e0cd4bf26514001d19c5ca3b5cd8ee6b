@@ -1,0 +1,17 @@
+package calculate_Ver4;
+
+public abstract class CalAbstract {
+	public int a;
+	public int b;
+	public String op;
+	public int result;
+	public int sum;
+	
+	public abstract void add();
+	public abstract void sub();
+	public abstract void mul();
+	public abstract void div();
+	public abstract void calculate();
+	public abstract char judgeOp();
+	public abstract boolean judgeCal();
+}

@@ -1,0 +1,9 @@
+package calculate_VerIs;
+
+import lombok.Data;
+
+@Data
+public class IsCal {
+	private String StringBuffer="";
+	private double result;
+}

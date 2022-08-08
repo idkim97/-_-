@@ -1,0 +1,7 @@
+package calculate_Ver3;
+
+public interface InterfaceEx {
+	
+	// 상수
+	public int MAX_INTEGER = 1000000;
+}

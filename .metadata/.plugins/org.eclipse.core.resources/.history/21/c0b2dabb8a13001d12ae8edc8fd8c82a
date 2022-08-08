@@ -1,0 +1,33 @@
+package calculate;
+
+public class Cal {
+	
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
+	public int sub(int a, int b) {
+		return a-b;
+	}
+	
+	public int mul(int a, int b) {
+		return a*b;
+	}
+	
+	public double div(double a, double b) {
+		return a/b;
+	}
+	
+	public char judge(String op) {
+		if(op.equals("+")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("-")) {
+			return op.charAt(0);
+		}
+	}
+	
+	
+	
+}

@@ -1,0 +1,77 @@
+package calculate_VerIs;
+
+import lombok.Data;
+
+@Data
+public class Calculator{
+	
+	private int a;
+	private int b;
+	private String op;
+	private double sum=0;
+	
+	// 더하기 연산 수행후 결과 return
+	public void add() {
+		sum += a;
+		result = sum;
+	}
+
+	// 빼기 연산 수행 후 결과 return
+	public void sub() {
+		sum -= a;
+		result = sum;
+	}
+
+	// 곱하기 연산 수행 후 결과 return
+	public void mul() {
+		sum *= a;
+		result = sum;
+	}
+
+	// 나누기 연산 수행 후 결과 return
+	public void div() {
+		sum /= a;
+		result = sum;
+	}
+	
+	// 연산 경로 저장
+	public void Calpath(String path) {
+		StringBuffer = StringBuffer.concat(path);
+	}
+	
+	public void calculate() {
+		if (op.equals("+")) {
+			add();
+		} else if (op.equals("-")) {
+			sub();
+		} else if (op.equals("*")) {
+			mul();
+		} else if (op.equals("/")) {
+			div();
+		}
+	}
+
+
+	// 연산기호가 무엇인지 판단하는 객체
+	public char judgeOp(String op) {
+		if (op.equals("+")) {
+			return op.charAt(0);
+		} else if (op.equals("-")) {
+			return op.charAt(0);
+		} else if (op.equals("*")) {
+			return op.charAt(0);
+		} else if (op.equals("/")) {
+			return op.charAt(0);
+		}
+		return 'X';
+	}
+
+	// 입력받은게 숫자인지 기호인지 판단하는 객체
+	public boolean judgeCal(boolean temp) {
+		if (temp == true)
+			return true;
+		else
+			return false;
+	}
+
+}

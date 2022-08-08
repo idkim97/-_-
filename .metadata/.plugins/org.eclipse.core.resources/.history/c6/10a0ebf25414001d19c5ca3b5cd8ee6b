@@ -1,0 +1,5 @@
+package calculate_Ver3;
+
+public interface CalculateInterface {
+
+}

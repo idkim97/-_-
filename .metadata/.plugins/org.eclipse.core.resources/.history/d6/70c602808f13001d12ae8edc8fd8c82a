@@ -1,0 +1,50 @@
+package newCalculate;
+
+public class Cal {
+	
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
+	public int sub(int a, int b) {
+		return a-b;
+	}
+	
+	public int mul(int a, int b) {
+		return a*b;
+	}
+	
+	public double div(double a, double b) {
+		return a/b;
+	}
+	
+	// 연산기호가 무엇인지 판단하는 객체
+	public char judgeOp(String op) {
+		if(op.equals("+")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("-")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("*")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("/")) {
+			return op.charAt(0);
+		}
+		
+		return 'X';
+	}
+	
+	public int judgeCal(int num) {
+		return 0;
+	}
+	
+	public char judgeCal(String op) {
+		return op.charAt(0);
+	}
+	
+	
+	
+}

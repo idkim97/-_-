@@ -1,0 +1,8 @@
+package calculate_VerHas;
+
+public interface HasCal {
+	
+	public HasCal() {
+		
+	}
+}

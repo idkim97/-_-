@@ -1,0 +1,34 @@
+package calculate;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+public class CalTest {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		CalResult res = new CalResult();
+
+		int a;
+		int b;
+		String op;
+
+		while (true) {
+			String str;
+			str = sc.nextLine();
+			
+			StringTokenizer st = new StringTokenizer(str,"\\+|\\-|\\*|\\/",true);
+			
+
+			a = Integer.parseInt(st.nextToken());
+			op = st.nextToken();
+			b = Integer.parseInt(st.nextToken());
+			
+			if(a==-1) break;
+			
+			// 결과는 CalResult에서 따로 처리
+			System.out.println(String.format("%.2f",res.result(a,b,op)));
+			
+		}
+	}
+}

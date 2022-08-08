@@ -1,0 +1,8 @@
+package calculate_VerHas;
+
+public interface HasCal {
+	public int a;
+	public int b;
+	public String op;
+	public double sum=0;
+}

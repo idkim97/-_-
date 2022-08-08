@@ -1,0 +1,9 @@
+package calculate_VerHas;
+
+public class Snippet {
+	public static void main(String[] args) {
+		res.setResult(cal.getResult());
+							res.setStringBuffer(cal.getStringBuffer());
+	}
+}
+

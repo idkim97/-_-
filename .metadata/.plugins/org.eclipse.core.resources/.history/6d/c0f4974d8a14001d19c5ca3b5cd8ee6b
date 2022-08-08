@@ -1,0 +1,97 @@
+package calculate_Ver4;
+
+import lombok.Data;
+
+@Data
+public class Calculator extends IsCal {
+	
+
+	
+	// 더하기 연산 수행후 결과 return
+	@Override
+	public void add() {
+		this.result = this.a + this.b;
+		this.sum = this.result;
+	}
+
+	// 빼기 연산 수행 후 결과 return
+	@Override
+	public void sub() {
+		this.result = this.a - this.b;
+		this.sum = this.result;
+	}
+
+	// 곱하기 연산 수행 후 결과 return
+	@Override
+	public void mul() {
+		this.result = this.a * this.b;
+		this.sum = this.result;
+	}
+
+	// 나누기 연산 수행 후 결과 return
+	@Override
+	public void div() {
+		this.result = this.a / this.b;
+		this.sum = this.result;
+	}
+	
+	// 연산 경로 저장
+	public void Calpath(String path) {
+		super.StringBuffer = StringBuffer.concat(path);
+	}
+
+	@Override
+	public void calculate(boolean flag) {
+		if (flag == true) {
+			if (op.equals("+")) {
+				add();
+			} else if (op.equals("-")) {
+				sub();
+			} else if (op.equals("*")) {
+				mul();
+			} else if (op.equals("/")) {
+				div();
+			}
+		} else {
+			if (op.equals("+")) {
+				result = sum + b;
+				sum = result;
+			} else if (op.equals("-")) {
+				result = sum - b;
+				sum = result;
+			} else if (op.equals("*")) {
+				result = sum * b;
+				sum = result;
+			} else if (op.equals("/")) {
+				result = sum / b;
+				sum = result;
+			}
+		}
+	}
+
+
+	// 연산기호가 무엇인지 판단하는 객체
+	@Override
+	public char judgeOp(String op) {
+		if (op.equals("+")) {
+			return op.charAt(0);
+		} else if (op.equals("-")) {
+			return op.charAt(0);
+		} else if (op.equals("*")) {
+			return op.charAt(0);
+		} else if (op.equals("/")) {
+			return op.charAt(0);
+		}
+		return 'X';
+	}
+
+	// 입력받은게 숫자인지 기호인지 판단하는 객체
+	@Override
+	public boolean judgeCal(boolean temp) {
+		if (temp == true)
+			return true;
+		else
+			return false;
+	}
+
+}

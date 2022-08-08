@@ -1,0 +1,9 @@
+package calculate_VerHas;
+
+import lombok.Data;
+
+@Data
+public class HasCal {
+	public String StringBuffer="";
+	public double result;
+}

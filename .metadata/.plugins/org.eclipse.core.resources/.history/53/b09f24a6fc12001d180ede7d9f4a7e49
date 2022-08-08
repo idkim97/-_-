@@ -1,0 +1,16 @@
+package calculate;
+
+public class CalResult {
+	
+	// 연산을 위해 Cal 생성자 참조
+	Cal cal = new Cal();
+	
+	public void result(int a, int b, String op) {
+		if(op.equals("+")) System.out.println(cal.add(a, b));
+		
+		else if(op.equals("-")) System.out.println(cal.sub(a, b));
+		else if(op.equals("*")) System.out.println(cal.mul(a, b));
+		else if(op.equals("/")) System.out.println((double)cal.div((double)a, (double)b));
+		
+	}
+}

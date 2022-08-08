@@ -1,0 +1,12 @@
+package calculate;
+
+public class Cal {
+	private int a;
+	private int b;
+	
+	public void add() {
+		return a+b;
+	}
+	
+	
+}

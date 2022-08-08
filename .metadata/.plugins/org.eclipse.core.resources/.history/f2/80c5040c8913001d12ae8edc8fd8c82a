@@ -1,0 +1,31 @@
+package calculate;
+
+public class Cal {
+	private double a;
+	private double b;
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
+	public int sub(int a, int b) {
+		return a-b;
+	}
+	
+	public int mul(int a, int b) {
+		return a*b;
+	}
+	
+	public double div(double a, double b) {
+		return a/b;
+	}
+	
+	public char judge(String op) {
+		if(op.equals("+") || op.equals("-")|| op.equals("*")|| op.equals("/")) {
+			res.result2(temp, (int)res.res1,Integer.parseInt(st.nextToken()));
+			continue;
+		}
+	}
+	
+	
+}

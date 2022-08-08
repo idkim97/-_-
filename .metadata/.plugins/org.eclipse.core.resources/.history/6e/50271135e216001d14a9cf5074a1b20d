@@ -1,0 +1,11 @@
+package calculate_VerIs;
+
+public class IsCal {
+	public String StringBuffer="";
+	public double result=0;
+	
+	
+	
+	// 전체적인 구조는 Calculator -> CalResult -> IsCal 를 띄고있음.
+	// main에서 
+}

@@ -1,0 +1,6 @@
+package calculate_VerHas;
+
+public class HasCal {
+	public String StringBuffer="";
+	public double result;
+}

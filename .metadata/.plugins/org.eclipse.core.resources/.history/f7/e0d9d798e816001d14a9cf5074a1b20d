@@ -1,0 +1,15 @@
+package calculate_VerHas;
+
+import lombok.Data;
+
+@Data
+public class CalResult{
+	
+	Calculator cal = new Calculator();
+	
+	
+	cal.PrintRes();
+}
+
+
+

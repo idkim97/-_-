@@ -1,0 +1,10 @@
+package calculate_Ver3;
+
+public interface InterfaceEx {
+	
+	// 상수 : 인터페이스에서 값을 정해줄테니 함부로 바꾸지 말고 제공해주는 값만 참조하라
+	public int MAX_INTEGER = 1000000;
+	
+	// 추상메소드
+	
+}

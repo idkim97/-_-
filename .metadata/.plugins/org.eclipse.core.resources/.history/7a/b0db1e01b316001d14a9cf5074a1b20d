@@ -1,0 +1,18 @@
+package calculate_VerIs;
+
+import lombok.Data;
+
+@Data
+public class CalResult{
+	
+	IsCal ical = new IsCal();
+	
+	// 연산을 한번만 진행하는 객체
+	public void result() {
+		System.out.println(" 결과 : " +ical.getResult());
+		System.out.printf(" 연산과정 : " + ical.getStringBuffer() + "\n");
+	}
+}
+
+
+

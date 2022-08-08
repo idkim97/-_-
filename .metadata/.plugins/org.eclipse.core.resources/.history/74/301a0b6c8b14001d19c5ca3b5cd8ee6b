@@ -1,0 +1,17 @@
+package calculate_Ver4;
+
+import lombok.Data;
+
+@Data
+public abstract class IsCal extends Calculator {
+	
+	public String StringBuffer;
+	public double result;
+	
+	public IsCal() {
+		this.StringBuffer = StringBuffer;
+		this.result = result;
+	}
+	
+
+}

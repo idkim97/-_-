@@ -1,0 +1,5 @@
+package calculate_Ver4;
+
+public interface HasCal {
+
+}

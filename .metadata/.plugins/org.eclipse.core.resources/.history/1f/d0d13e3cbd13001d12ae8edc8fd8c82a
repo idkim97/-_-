@@ -1,0 +1,58 @@
+package calculate_Ver2;
+
+public class Cal {
+	
+	public int result;
+	public int sum;
+	
+	public int add(int a, int b) {
+		return a+b;
+	}
+	
+	public int sub(int a, int b) {
+		return a-b;
+	}
+	
+	public int mul(int a, int b) {
+		return a*b;
+	}
+	
+	public double div(double a, double b) {
+		return a/b;
+	}
+	
+	
+	
+	// 연산기호가 무엇인지 판단하는 객체
+	public char judgeOp(String op) {
+		if(op.equals("+")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("-")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("*")) {
+			return op.charAt(0);
+		}
+		else if(op.equals("/")) {
+			return op.charAt(0);
+		}
+		/*else if(op.equals("r")) {
+			return op.charAt(0);
+		}*/
+		
+		return 'X';
+	}
+	
+	
+	// 입력받은게 숫자인지 기호인지 판단하는 객체
+	public boolean judgeCal(boolean temp) {
+		if(temp==true) return true;
+		else return false;
+	}
+	
+	
+	
+	
+	
+}

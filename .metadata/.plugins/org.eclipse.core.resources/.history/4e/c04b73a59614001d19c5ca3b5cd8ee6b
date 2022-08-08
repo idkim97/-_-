@@ -1,0 +1,5 @@
+package calculate_VerIs;
+
+public interface HasCal {
+	
+}

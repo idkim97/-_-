@@ -1,0 +1,52 @@
+package newCalculate;
+
+import calculate.Cal;
+
+public class CalResult {
+	
+	// 연산을 위해 Cal 생성자 참조
+	Cal cal = new Cal();
+	double res1;
+	
+	// 연산을 한번만 진행하는 객체
+	public void result(int a, int b, String op) {
+		if(op.equals("+")) {
+			System.out.println(cal.add(a, b));
+			res1 = (int)cal.add(a, b);
+		}
+		else if(op.equals("-")) {
+			System.out.println(cal.sub(a, b));
+			res1 = (int)cal.sub(a, b);
+		}
+		else if(op.equals("*")) {
+			System.out.println(cal.mul(a, b));
+			res1 = (int)cal.mul(a, b);
+		}
+		else if(op.equals("/")) {
+			System.out.println(String.format("%.2f",(double)cal.div((double)a, (double)b)));
+			res1 = cal.div(a, b);
+		}
+	}
+	
+	// 연산을 여러번 진행하는 객체 ( 기존 result와 파라미터를 달리함 )
+	public void result(String op, int sum, int value) {
+		int res;
+		if(op.equals("+")) {
+			System.out.println(cal.add(sum, value));
+			res1 = (int)cal.add(sum, value);
+		}
+		else if(op.equals("-")) {
+			System.out.println(cal.sub(sum, value));
+			res1 = (int)cal.sub(sum, value);
+		}
+		else if(op.equals("*")) {
+			System.out.println(cal.mul(sum, value));
+			res1 = (int)cal.mul(sum, value);
+		}
+		else if(op.equals("/")) {
+			System.out.println(String.format("%.2f",(double)cal.div((double)sum, (double)value)));
+			res1 = (int)cal.div(sum, value);
+		}
+	}
+}
+
