@@ -13,7 +13,7 @@ public class Calculator extends CalResult{
 	// 더하기 연산 수행후 결과 return
 	public void add() {
 		this.sum += this.a;
-		super.result = this.sum;
+		super.set = this.sum;
 	}
 
 	// 빼기 연산 수행 후 결과 return

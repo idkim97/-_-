@@ -9,6 +9,7 @@ public abstract class CalAbstract {
 	private int b;
 	private String op;
 	private double sum=0;
+	private double zero=0;
 	
 	private StringBuffer sb = new StringBuffer();
 	private double result=0;

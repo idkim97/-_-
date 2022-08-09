@@ -5,15 +5,15 @@ import lombok.Data;
 @Data
 public class Calculator extends CalResult{
 	
-	public int a;
-	public int b;
-	public String op;
-	public double sum=0;
+	private int a;
+	private int b;
+	private String op;
+	private double sum=0;
 
 	// 더하기 연산 수행후 결과 return
 	public void add() {
 		this.sum += this.a;
-		super.result = this.sum;
+		set = this.sum;
 	}
 
 	// 빼기 연산 수행 후 결과 return
