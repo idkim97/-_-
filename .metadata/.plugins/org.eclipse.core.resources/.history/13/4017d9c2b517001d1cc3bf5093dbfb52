@@ -1,0 +1,6 @@
+package calculate_Ver_Interface;
+
+public interface CalResult {
+	
+	void PrintResult()
+}

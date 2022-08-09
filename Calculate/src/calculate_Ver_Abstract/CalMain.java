@@ -15,11 +15,7 @@ public class CalMain {
 		ContinuousCal con = new ContinuousCal();
 		StandardCal std = new StandardCal();
 		
-		
 		con.cal();
 		std.cal();
-
-		
-
 	}
 }

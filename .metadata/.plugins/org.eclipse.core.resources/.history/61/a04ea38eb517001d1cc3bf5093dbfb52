@@ -1,0 +1,7 @@
+package calculate_Ver_Interface;
+
+public interface CalResult {
+	public void PrintResult() {
+		
+	}
+}

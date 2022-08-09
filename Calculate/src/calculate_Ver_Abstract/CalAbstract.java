@@ -1,5 +1,6 @@
 package calculate_Ver_Abstract;
 
+import calculate_Ver_Interface.CalResult;
 import lombok.Data;
 
 @Data
@@ -12,6 +13,23 @@ public abstract class CalAbstract {
 	
 	private StringBuffer sb = new StringBuffer();
 	private double result=0;
+	
+	private CalResult calResult;
+	
+	
+	// 추상클래스 내에 클래스를 하나 만들어서 인터페이스를 implements해줌으로써 
+	// calResult를 초기화할 수 있음.
+	class DefaultCalResultDisplay implements CalResult{
+		
+		@Override
+		public void PrintResult() {
+			
+		}
+		
+		public void PrintProcess() {
+			
+		}
+	}
 	
 
 	public void add() {
@@ -68,9 +86,36 @@ public abstract class CalAbstract {
 	public boolean judgeNumOrOp(String temp) {
 		return temp.matches("-?\\d+");
 	}
+	
+	public void PrintResult() {
+		System.out.println("결과 : " + getSb());
+	}
+	
+	public void PrintProcess() {
+		System.out.println("연산 과정 : " + getResult());
+	}
 
 	
 	// 추상메소드
 	public abstract void cal();
+	
+	
+	
+	
+	public void addDisplayResult(CalResult calResult) {
+		this.calResult = calResult;
+	}
+	
+	public void display() {
+		if(this.calResult == null) {
+			DefaultCalResultDisplay defaultCalResultDisplay = new DefaultCalResultDisplay();
+			defaultCalResultDisplay.PrintProcess();
+			defaultCalResultDisplay.PrintResult();
+		}
+		else {
+			calResult.PrintProcess();
+			calResult.PrintResult();
+		}
+	}
 
 }
