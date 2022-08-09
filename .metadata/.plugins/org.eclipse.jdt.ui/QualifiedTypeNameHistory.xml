@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="calculate.Cal"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Abstract.CalAbstract"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Abstract.StandardCal"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Interface.CalResult"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Abstract.CalAbstract.DefaultCalResultDisplay"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
 </qualifiedTypeNameHistroy>
