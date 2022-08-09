@@ -1,0 +1,28 @@
+package calculate_Ver_Abstract;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+public class CalMain {
+
+	public static void main(String[] args) {
+		
+		
+		Calculator cal = new Calculator();
+
+	
+		
+		// 연속 계산기
+		cal.cal1();
+		cal.result(cal.getSb(),cal.getResult());
+		
+		
+		// 단일 계산기
+		cal.cal2();
+		cal.result();
+	}
+}

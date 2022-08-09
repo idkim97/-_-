@@ -1,0 +1,6 @@
+package calculate_Ver_Abstract;
+
+public abstract class CalAbstract {
+	public abstract void add();
+	
+}

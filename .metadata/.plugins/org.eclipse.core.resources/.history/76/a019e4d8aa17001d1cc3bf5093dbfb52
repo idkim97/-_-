@@ -1,0 +1,16 @@
+package calculate_Ver_Abstract;
+
+public class CalResult{
+
+	Calculator cal = new Calculator();
+	// 연산을 한번만 진행하는 객체
+	
+	default void result(StringBuffer path, double result) {
+		System.out.println("연산 과정 : " + path);
+		System.out.println("결과 : " + result);
+	}
+	
+}
+
+
+

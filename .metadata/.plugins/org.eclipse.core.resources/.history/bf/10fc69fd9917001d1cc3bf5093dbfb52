@@ -1,0 +1,81 @@
+package calculate_Ver_Abstract;
+
+import lombok.Data;
+
+@Data
+public class Calculator extends CalAbstract{
+	
+	// 더하기 연산 수행후 결과 return
+	@Override
+	public void add() {
+		setSum(getSum()+getA());
+		setResult(getSum());
+	}
+
+	// 빼기 연산 수행 후 결과 return
+	@Override
+	public void sub() {
+		setSum(getSum()-getA());
+		setResult(getSum());
+	}
+
+	// 곱하기 연산 수행 후 결과 return
+	@Override
+	public void mul() {
+		setSum(getSum()*getA());
+		setResult(getSum());
+	}
+
+	// 나누기 연산 수행 후 결과 return
+	@Override
+	public void div() {
+		setSum(getSum()/getA());
+		setResult(getSum());
+	}
+	
+	// 연산기호가 무엇인지 판단하는 객체
+	@Override
+	public char judgeOp(String op) {
+		if (op.equals("+")) {
+			return op.charAt(0);
+		} else if (op.equals("-")) {
+			return op.charAt(0);
+		} else if (op.equals("*")) {
+			return op.charAt(0);
+		} else if (op.equals("/")) {
+			return op.charAt(0);
+		}
+		return 'X';
+	}
+	
+	// 연산 경로 저장
+	@Override
+	public void Calpath(String path) {
+		StringBuffer = super.StringBuffer.concat(path);
+	}
+	
+	@Override
+	public void calculate() {
+		if (getOp().equals("+")) {
+			add();
+		} else if (getOp().equals("-")) {
+			sub();
+		} else if (getOp().equals("*")) {
+			mul();
+		} else if (getOp().equals("/")) {
+			div();
+		}
+	}
+
+
+	
+
+	// 입력받은게 숫자인지 기호인지 판단하는 객체
+	public boolean judgeCal(boolean temp) {
+		if (temp == true)
+			return true;
+		else
+			return false;
+	}
+
+}

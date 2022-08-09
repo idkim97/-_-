@@ -1,0 +1,13 @@
+package calculate_VerIs;
+
+public class IsCal {
+	public String StringBuffer="";
+	public double result=0;
+	
+	// 전체적인 구조는 Calculator -> CalResult -> IsCal 를 띄고있음.
+	// main에서 Calculator 객체를 이용해 계산을 하고 계산 결과를 IsCal에 저장함
+	// 결과는 IsCal에 정상적으로 저장되었음을 분명히 확인함.
+	// 마지막 결과출력을 위해 main에서 CalResult 객체를 이용해 접근 후 출력시도 -> 실패
+	// 그런데 Calculator 객체를 타고 CalResult로 접근해서 출력하니 성공
+	// 왜 why??
+}

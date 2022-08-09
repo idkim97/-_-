@@ -1,0 +1,27 @@
+package calculate_Ver_Abstract;
+
+import java.util.Scanner;
+import java.util.StringTokenizer;
+
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+@Data
+public class CalMain {
+
+	public static void main(String[] args) {
+		
+		
+		Calculator cal = new Calculator();
+		CalResult res = new CalResult();
+
+		int a;
+		int b;
+		String op;
+		
+		
+		cal.cal1();
+
+		
+	}
+}

@@ -1,0 +1,20 @@
+package calculate_Ver_Abstract;
+
+import lombok.Data;
+
+@Data
+public abstract class CalAbstract {
+	
+	private int a;
+	private int b;
+	private String op;
+	private double sum=0;
+	private double result;
+	
+	public abstract void add();
+	public abstract void sub();
+	public abstract void mul();
+	public abstract void div();
+	public abstract char judgeOp(String op);
+	public abstract void Calpath(String path);
+}

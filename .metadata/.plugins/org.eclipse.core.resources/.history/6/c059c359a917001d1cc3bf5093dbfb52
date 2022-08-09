@@ -1,0 +1,19 @@
+package calculate_Ver_Abstract;
+
+import lombok.Data;
+
+
+public interface CalResult{
+
+	Calculator cal = new Calculator();
+	// 연산을 한번만 진행하는 객체
+	
+	default void result() {
+		System.out.println(cal.getSb().toString());
+		System.out.println(cal.getResult());
+	}
+	
+}
+
+
+

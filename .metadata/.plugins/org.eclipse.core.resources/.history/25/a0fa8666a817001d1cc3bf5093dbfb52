@@ -1,0 +1,19 @@
+package calculate_Ver_Abstract;
+
+import lombok.Data;
+
+@Data
+public class CalResult{
+
+	
+	// 연산을 한번만 진행하는 객체
+	
+	public void result() {
+		System.out.println(sb.toString());
+		System.out.println(getResult());
+	}
+	
+}
+
+
+

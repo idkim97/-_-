@@ -14,11 +14,11 @@ public class Calculator {
 	private double sum=0;
 	
 	
-	/*public void PrintRes() {
+	public void PrintRes() {
 		System.out.println("결과 : " + hcal.getResult());
 		System.out.println("연산 과정 : " + hcal.getStringBuffer());
 	}
-	*/
+	
 	
 	
 	// 더하기 연산 수행후 결과 return
