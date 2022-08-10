@@ -1,0 +1,20 @@
+package calculate_Ver_Adapter.copy;
+
+public class CalAdapter implements CalResult {
+	
+
+	
+	@Override
+	public void PrintProcess() {
+		System.out.println("");
+	}
+	
+	@Override
+	public void PrintResult() {
+		System.out.println("");
+	}
+	
+	public void PrintFinish() {
+		System.out.println("계산끝났당오예~!");
+	}
+}

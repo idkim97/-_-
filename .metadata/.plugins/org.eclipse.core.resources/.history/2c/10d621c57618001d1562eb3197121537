@@ -1,0 +1,16 @@
+package calculate_Ver_Adapter.copy;
+
+public class CalAdapter implements CalResult {
+	
+	
+	@Override
+	public void PrintProcess() {
+		
+	}
+	
+	@Override
+	public void PrintResult() {
+		// TODO Auto-generated method stub
+		
+	}
+}

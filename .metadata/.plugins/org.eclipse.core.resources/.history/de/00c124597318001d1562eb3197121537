@@ -1,0 +1,18 @@
+package calculate_Ver_Adapter.copy;
+
+public class CalAdapter implements CalResult {
+	
+	ContinuousCal con = new ContinuousCal();
+	
+	@Override
+	public void PrintProcess() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
+	public void PrintResult() {
+		// TODO Auto-generated method stub
+		
+	}
+}

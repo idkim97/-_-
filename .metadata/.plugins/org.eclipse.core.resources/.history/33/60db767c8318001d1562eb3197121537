@@ -1,0 +1,41 @@
+package calculate_Ver_Adapter.copy;
+
+import calculate_Ver_Interface.CalResult;
+
+public class CalAdapter extends CalAbstract implements CalResult {
+	
+	
+	
+	//class DefaultDisplay extends CalAdapter{}
+	
+	@Override
+	public void cal() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+	@Override
+	public void PrintProcess() {
+		System.out.println("과정 : "+ CalAbstract.getSb());
+	}
+	
+	@Override
+	public void PrintResult() {
+		System.out.println("결과 : " + getResult());
+	}
+	
+	public void PrintFinish() {
+		System.out.println("계산끝났당오예~!");
+	}
+	
+	public void Display() {
+		//DefaultDisplay defaultDisplay = new DefaultDisplay();
+		PrintProcess();
+		PrintResult();
+		PrintFinish();
+	}
+	
+	
+	
+}
