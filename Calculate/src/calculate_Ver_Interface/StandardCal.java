@@ -53,8 +53,11 @@ public class StandardCal extends CalAbstract{
 					getSb().append(temp);
 					calculate();
 					
-					System.out.println("연산 과정 : " + getSb().toString());
-					System.out.println("결과 : " + getResult());
+					//System.out.println("연산 과정 : " + getSb().toString());
+					//System.out.println("결과 : " + getResult());
+					
+					display();
+					
 					getSb().setLength(0);
 					setResult(0);
 					setSum(0);
@@ -76,4 +79,6 @@ public class StandardCal extends CalAbstract{
 			
 		}
 	}
+
+	
 }

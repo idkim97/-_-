@@ -7,7 +7,7 @@ import calculate_Ver_Interface.CalResult;
 import lombok.Data;
 
 @Data
-public class StandardCal extends CalAbstract implements CalResult{
+public class StandardCal extends CalAbstract{
 	
 	Scanner sc = new Scanner(System.in);
 
@@ -56,12 +56,7 @@ public class StandardCal extends CalAbstract implements CalResult{
 					
 					System.out.println("연산 과정 : " + getSb().toString());
 					System.out.println("결과 : " + getResult());
-					
-					
-					
-					display();
-					
-					
+	
 					getSb().setLength(0);
 					setResult(0);
 					setSum(0);

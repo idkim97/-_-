@@ -23,8 +23,12 @@ public class ContinuousCal extends CalAbstract{
 			if (temp.equals("=")) {
 				/////////// 얘를 res.result()로 하면 왜안됨???
 				//res.result();
-				System.out.println("연산과정 : " + getSb().toString());
-				System.out.println("결과 : " + getResult());
+				//System.out.println("연산과정 : " + getSb().toString());
+				//System.out.println("결과 : " + getResult());
+				
+				display();
+				
+				
 				getSb().setLength(0);
 				setResult(0);
 				setSum(0);
@@ -78,6 +82,8 @@ public class ContinuousCal extends CalAbstract{
 			}
 		}
 	}
+
+	
 	
 
 }

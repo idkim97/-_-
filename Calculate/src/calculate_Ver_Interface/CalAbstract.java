@@ -13,6 +13,25 @@ public abstract class CalAbstract {
 	private StringBuffer sb = new StringBuffer();
 	private double result=0;
 	
+	
+	private CalResult calResult;
+	
+	
+	// 추상클래스 내에 클래스를 하나 만들어서 인터페이스를 implements해줌으로써 
+	// calResult를 초기화할 수 있음.
+	class DefaultCalResultDisplay implements CalResult{
+		
+		@Override
+		public void PrintResult() {
+			System.out.println("결과 : " + getResult());
+		}
+		
+		@Override
+		public void PrintProcess() {
+			System.out.println("연산 과정 : " + getSb());
+		}
+	}
+	
 
 	public void add() {
 		setSum(getSum()+getA());
@@ -72,5 +91,23 @@ public abstract class CalAbstract {
 	
 	// 추상메소드
 	public abstract void cal();
+	
+
+	
+	public void addDisplayResult(CalResult calResult) {
+		this.calResult = calResult;
+	}
+	
+	public void display() {
+		if(this.calResult == null) {
+			DefaultCalResultDisplay defaultCalResultDisplay = new DefaultCalResultDisplay();
+			defaultCalResultDisplay.PrintProcess();
+			defaultCalResultDisplay.PrintResult();
+		}
+		else {
+			calResult.PrintProcess();
+			calResult.PrintResult();
+		}
+	}
 
 }
