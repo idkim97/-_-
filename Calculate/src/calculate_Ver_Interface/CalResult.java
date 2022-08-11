@@ -6,6 +6,5 @@ public interface CalResult {
 	
 	// 과정출력 추상메소드
 	void PrintProcess();
-	
-	
+
 }

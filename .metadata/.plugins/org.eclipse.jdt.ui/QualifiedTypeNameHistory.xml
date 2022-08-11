@@ -6,5 +6,7 @@
     <fullyQualifiedTypeName name="calculate_Ver_Abstract.StandardCal"/>
     <fullyQualifiedTypeName name="calculate_Ver_Interface.CalResult"/>
     <fullyQualifiedTypeName name="calculate_Ver_Abstract.CalAbstract.DefaultCalResultDisplay"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Adapter.copy.CalAdapter"/>
+    <fullyQualifiedTypeName name="calculate_Ver_Adapter.copy.CalAbstract"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
 </qualifiedTypeNameHistroy>
