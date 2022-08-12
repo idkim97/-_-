@@ -28,10 +28,10 @@
 		<input type="submit" value="입력">
 	</form>
 	
-	<% 
-		StandardCal std = new StandardCal();
-		
-	%>
+	<!-- 입력값을 std.cal(temp)에 temp에 넣어주고 계산한뒤에
+			결과값인 sb와 result를 가져와서 출력하면 됨 -->
+	
+	
 	
 	
 	
