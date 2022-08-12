@@ -1,3 +1,10 @@
+<%@ page import="java.sql.*" %>
+<%@ page import="calculate_Ver_Adapter.CalAbstract" %>
+<%@ page import="calculate_Ver_Adapter.CalAdapter" %>
+<%@ page import="calculate_Ver_Adapter.CalResult" %>
+<%@ page import="calculate_Ver_Adapter.ContinuousCal" %>
+<%@ page import="calculate_Ver_Adapter.StandardCal" %>
+<%@ page import="calculate_Ver_Adapter.CalMain" %>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -8,11 +15,19 @@
 </head>
 <body>
 	<h2> 계산 결과 </h2>
-	<%
-		request.setCharacterEncoding("EUC-KR");
-		int num1 = Integer.parseInt(request.getParameter("num1"));
-		int num2 = Integer.parseInt(request.getParameter("num2"));
-		String op = request.getParameter("op");
+	
+	<% 
+		StandardCal std = new StandardCal();
+		std.cal(request.getParameter("temp"));
 	%>
+	
+	
+		연산과정 : <%=std.getSb()%>
+		연산결과 : <%=std.getResult()%>
+		
+	<form action="InsertCal.jsp" method="post">
+		<input type="submit" value="추가입력">
+	</form>
+	
 </body>
 </html>
