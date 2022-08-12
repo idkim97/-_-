@@ -11,14 +11,25 @@ public class CalMain {
 
 	public static void main(String[] args) {
 		
-		
+		Scanner sc = new Scanner(System.in);
 		ContinuousCal con = new ContinuousCal();
 		StandardCal std = new StandardCal();
 		
+		while(true) {
+			String str;
+			str = sc.nextLine();
+
+			StringTokenizer st = new StringTokenizer(str, "\\+|\\-|\\*|\\/", true);
+
+			String temp = st.nextToken();
+			//con.cal(temp);
+			std.cal(temp);
+		}
+	
+				
 		
-		con.cal();
 		
-		std.cal();
+		
 
 		
 

@@ -72,7 +72,8 @@ public abstract class CalAbstract implements CalResult {
 
 	
 	// 추상메소드
-	public abstract void cal();
+	public abstract void cal(String temp);
+	
 	
 	@Override
 	public void PrintResult(double result) {
