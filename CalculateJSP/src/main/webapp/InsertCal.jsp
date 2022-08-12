@@ -30,7 +30,6 @@
 	
 	<% 
 		StandardCal std = new StandardCal();
-		std.cal(temp);	
 		
 	%>
 	
