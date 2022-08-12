@@ -12,8 +12,9 @@ public class ContinuousCal extends CalAbstract{
 	CalAdapter calAdapter = new CalAdapter();
 	
 
+	
+
 	// 연속 계산 수행
-	// 추상메소드 구현부
 	@Override
 	public void cal() {
 		while (true) {

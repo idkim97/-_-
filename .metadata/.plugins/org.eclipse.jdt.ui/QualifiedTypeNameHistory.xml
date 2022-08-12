@@ -8,5 +8,6 @@
     <fullyQualifiedTypeName name="calculate_Ver_Abstract.CalAbstract.DefaultCalResultDisplay"/>
     <fullyQualifiedTypeName name="calculate_Ver_Adapter.copy.CalAdapter"/>
     <fullyQualifiedTypeName name="calculate_Ver_Adapter.copy.CalAbstract"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
 </qualifiedTypeNameHistroy>
