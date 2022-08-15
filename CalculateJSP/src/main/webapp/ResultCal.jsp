@@ -17,8 +17,10 @@
 	<h2> 계산 결과 </h2>
 	
 	<% 
+	
 		StandardCal std = new StandardCal();
 		std.cal(request.getParameter("temp"));
+	
 	%>
 	
 	
