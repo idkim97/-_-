@@ -12,16 +12,26 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>계산기 시작화면</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<form action="ContinuousInsert.jsp" method="post">
-		<input type="submit" value="연속 계산">
-	<br><br>
-	</form>
-	<form action="StandardInsert.jsp" method="post">
-		<input type="submit" value="일반 계산">
-	</form>
+
+	<%
+		StandardCal std = new StandardCal();
+		
+		std.cal(request.getParameter("temp"));
+	%>
 	
+	<!--  이게 StandardCal의 로직문제인지, 객체를 매번 생성하는게 문제인지,페이지를 넘나드는게 문제인지,
+			sb랑 result에 값이 저장은 되는데 페이지 넘어갔다 다시오면 값이 사라져있음  -->
+	연산과정 : <%=std.getSb()%>
+	연산결과 : <%=std.getResult()%>
+	
+	
+	<form action="StandardInsert.jsp" method="post">
+		<br>
+		<input type="submit" value="추가입력">
+		
+	</form>
 </body>
 </html>

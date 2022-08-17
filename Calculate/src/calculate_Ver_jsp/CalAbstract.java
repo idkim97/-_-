@@ -1,6 +1,5 @@
-package calculate_Ver_Adapter;
+package calculate_Ver_jsp;
 
-import calculate_Ver_Adapter.CalResult;
 import lombok.Data;
 
 @Data
@@ -13,6 +12,8 @@ public abstract class CalAbstract implements CalResult {
 	
 	private StringBuffer sb = new StringBuffer();
 	private double result=0;
+	
+	boolean flag = true;
 	
 	
 

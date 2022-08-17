@@ -12,16 +12,29 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>계산기 시작화면</title>
+<title>계산 결과 출력</title>
 </head>
 <body>
-	<form action="ContinuousInsert.jsp" method="post">
-		<input type="submit" value="연속 계산">
-	<br><br>
-	</form>
-	<form action="StandardInsert.jsp" method="post">
-		<input type="submit" value="일반 계산">
-	</form>
+	<h2>계산 결과</h2>
+
+	<% 
+		CalLong lng = new CalLong();	
+		lng.cal(request.getParameter("temp"));
+		
+		
+		//con.setResult(con.getResult());
+		//con.getSb().append(request.getParameter("temp"));
+		
+	%>
+
 	
+	연산과정 : <%=lng.getSb()%>
+	연산결과 : <%=lng.getResult()%>
+
+	<form action="ContinuousInsert.jsp" method="post">
+		<br>
+		<input type="submit" value="추가입력">
+	</form>
+
 </body>
 </html>

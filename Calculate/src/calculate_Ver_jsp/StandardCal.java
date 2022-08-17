@@ -1,4 +1,4 @@
-package calculate_Ver_Adapter;
+package calculate_Ver_jsp;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -6,14 +6,12 @@ import java.util.StringTokenizer;
 import lombok.Data;
 
 @Data
-public class ContinuousCal extends CalAbstract {
+public class StandardCal extends CalAbstract {
 
 	Scanner sc = new Scanner(System.in);
 	CalAdapter calAdapter = new CalAdapter();
-	
 
-	// 연속 계산 수행
-	// 추상메소드 구현부
+	// 단일 계산 수행
 	@Override
 	public void cal(String temp) {
 
@@ -25,23 +23,6 @@ public class ContinuousCal extends CalAbstract {
 		 * String temp = st.nextToken();
 		 */
 
-		if (temp.equals("=")) {
-			/////////// 얘를 res.result()로 하면 왜안됨???
-			// res.result();
-			System.out.println("연산과정 : " + getSb().toString());
-			System.out.println("결과 : " + getResult());
-
-			calAdapter.Display(getSb(), getResult());
-
-			getSb().setLength(0);
-			setResult(0);
-			setSum(0);
-			System.exit(0);
-			
-		}
-
-		// 첫번째 문자가 숫자인지 기호인지를 판단하는 코드
-		// 숫자면 true, 기호면 false
 		boolean IntOrNot = judgeNumOrOp(temp);
 
 		// StringBuffer가 비어있는 경우
@@ -50,14 +31,11 @@ public class ContinuousCal extends CalAbstract {
 				int a = Integer.parseInt(temp);
 				// a는 int형식으로 저장
 				setA(a);
-				System.out.println("a : " + getA());
 
 				// StringBuffer에 String형식으로 저장
 				getSb().append(temp);
 				setSum(getSum() + a);
-				System.out.println("sum : " + getSum());
 				setResult(getResult() + a);
-				System.out.println("Result : " + getResult());
 			} else {
 				System.out.println("숫자를 입력하세요!");
 				
@@ -72,12 +50,20 @@ public class ContinuousCal extends CalAbstract {
 				int a = Integer.parseInt(temp);
 				// a는 int형식으로 저장
 				setA(a);
-				System.out.println("a : " + getA());
+
 				// StringBuffer에 String형식으로 저장
 				getSb().append(temp);
 				calculate();
-				System.out.println("sum : " + getSum());
-				System.out.println("Result : " + getResult());
+
+				// System.out.println("연산 과정 : " + getSb().toString());
+				// System.out.println("결과 : " + getResult());
+
+				calAdapter.Display(getSb(), getResult());
+
+				getSb().setLength(0);
+				setResult(0);
+				setSum(0);
+				System.exit(0);
 			}
 
 			// 첫번째 문자가 기호일 경우

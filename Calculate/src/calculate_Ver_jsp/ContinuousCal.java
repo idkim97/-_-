@@ -1,4 +1,4 @@
-package calculate_Ver_Adapter;
+package calculate_Ver_jsp;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -18,7 +18,9 @@ public class ContinuousCal extends CalAbstract {
 	public void cal(String temp) {
 
 		/*
-		 * String str; str = sc.nextLine();
+		 * String str; 
+		 * 
+		 * str = sc.nextLine();
 		 * 
 		 * StringTokenizer st = new StringTokenizer(str, "\\+|\\-|\\*|\\/", true);
 		 * 

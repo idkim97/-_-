@@ -1,4 +1,4 @@
-package calculate_Ver_Adapter;
+package calculate_Ver_jsp;
 
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -14,18 +14,20 @@ public class CalMain {
 		Scanner sc = new Scanner(System.in);
 		ContinuousCal con = new ContinuousCal();
 		StandardCal std = new StandardCal();
+		CalLong lng = new CalLong();
 		
-		while(true) {
+//		while(true) {
 //			String str;
 //			str = sc.nextLine();
 //
 //			StringTokenizer st = new StringTokenizer(str, "\\+|\\-|\\*|\\/", true);
 //
 //			String temp = st.nextToken();
-			con.cal(sc.nextLine());
+			
+			lng.cal(sc.nextLine());
 			//con.cal(temp);
 			//std.cal(temp);
-		}
+//		}
 	
 				
 		
