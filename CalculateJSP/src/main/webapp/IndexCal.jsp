@@ -1,11 +1,12 @@
 <%@ page import="java.sql.*" %>
-<%@ page import="calculate_Ver_jsp.CalAbstract" %>
-<%@ page import="calculate_Ver_jsp.CalAdapter" %>
-<%@ page import="calculate_Ver_jsp.CalResult" %>
-<%@ page import="calculate_Ver_jsp.ContinuousCal" %>
-<%@ page import="calculate_Ver_jsp.StandardCal" %>
-<%@ page import="calculate_Ver_jsp.CalMain" %>
-<%@ page import="calculate_Ver_jsp.CalLong" %>
+<%@ page import="calculate_Ver_jsp_Singleton.CalAbstract" %>
+<%@ page import="calculate_Ver_jsp_Singleton.CalAdapter" %>
+<%@ page import="calculate_Ver_jsp_Singleton.CalResult" %>
+<%@ page import="calculate_Ver_jsp_Singleton.ContinuousCal" %>
+<%@ page import="calculate_Ver_jsp_Singleton.StandardCal" %>
+<%@ page import="calculate_Ver_jsp_Singleton.CalMain" %>
+<%@ page import="calculate_Ver_jsp_Singleton.CalLong" %>
+<%@ page import="calculate_Ver_jsp_Singleton.StdCal_Singleton" %>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>

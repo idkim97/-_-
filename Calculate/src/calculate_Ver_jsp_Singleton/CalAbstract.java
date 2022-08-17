@@ -1,4 +1,4 @@
-package calculate_Ver_Adapter.copy;
+package calculate_Ver_jsp_Singleton;
 
 import lombok.Data;
 
@@ -13,27 +13,11 @@ public abstract class CalAbstract implements CalResult {
 	private StringBuffer sb = new StringBuffer();
 	private double result=0;
 	
+	boolean flag = true;
 	
-	private CalResult calResult;
-	
-	
-	// 추상클래스 내에 클래스를 하나 만들어서 인터페이스를 implements해줌으로써 
-	// calResult를 초기화할 수 있음.
-	// 이게 어댑터 패턴(클래스)이네.. 
-	class DefaultCalResultDisplay implements CalResult{
-		
-		@Override
-		public void PrintResult() {
-			System.out.println("결과 : " + getResult());
-		}
-		
-		@Override
-		public void PrintProcess() {
-			System.out.println("연산 과정 : " + getSb());
-		}
-	}
 	
 
+	
 	public void add() {
 		setSum(getSum()+getA());
 		setResult(getSum());
@@ -91,24 +75,19 @@ public abstract class CalAbstract implements CalResult {
 
 	
 	// 추상메소드
-	public abstract void cal();
+	public abstract void cal(String temp);
 	
-
 	
-	public void addDisplayResult(CalResult calResult) {
-		this.calResult = calResult;
+	@Override
+	public void PrintResult(double result) {
+		System.out.println("결과 : "+ result);
 	}
 	
-	public void display() {
-		if(this.calResult == null) {
-			DefaultCalResultDisplay defaultCalResultDisplay = new DefaultCalResultDisplay();
-			defaultCalResultDisplay.PrintProcess();
-			defaultCalResultDisplay.PrintResult();
-		}
-		else {
-			calResult.PrintProcess();
-			calResult.PrintResult();
-		}
+	@Override
+	public void PrintProcess(StringBuffer sb) {
+		System.out.println("과정 : " + sb);
 	}
+	
+	
 
 }

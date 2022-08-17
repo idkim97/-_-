@@ -17,20 +17,25 @@
 </head>
 <body>
 
+	<%
+		  StdCal_Singleton sin = StdCal_Singleton.getInstance();
+		  sin.cal(request.getParameter("temp"));
+	%>
 	
-	<h2>계산할 숫자와 연산자를 입력하세요 (일반계산)</h2>
-	<form action="StandardResultSingleton.jsp" method="post">
-
-
-		계산식을 입력하세요 : <input type="text" name="temp"><br> <br>
-		<input type="submit" value="입력">
+	
+	<!--  이게 StandardCal의 로직문제인지, 객체를 매번 생성하는게 문제인지,페이지를 넘나드는게 문제인지,
+			sb랑 result에 값이 저장은 되는데 페이지 넘어갔다 다시오면 값이 사라져있음  -->
+	연산과정 : <%=sin.getSb()%>
+	연산결과 : <%=sin.getResult()%>
+	
+	
+	
+	
+	
+	<form action="StandardInsert.jsp" method="post">
+		<br>
+		<input type="submit" value="추가입력">
+		
 	</form>
-
-	<br>
-
-	<form action="IndexCal.jsp" method="post">
-		<input type="submit" value="계산기 다시선택">
-	</form>
-
 </body>
 </html>
