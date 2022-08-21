@@ -20,7 +20,6 @@ INDEX VERSION 1.131+C:\Development\Calculate\.metadata\.plugins\org.eclipse.jdt.
 2550780956.index
 2836588158.index
 1146699753.index
-377739574.index
 2406791707.index
 2293683374.index
 3724589718.index
